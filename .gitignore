@@ -23,6 +23,3 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
-
-# Experiment Output CSVs (prevents test data files from clogging your repo)
-RT_Experiment_*.csv
