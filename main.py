@@ -15,6 +15,7 @@ class ReactionTimeApp:
         self.root.configure(bg="#121212")
 
         self.participant_id = ""
+        self.csv_handler = None
         self.experiment_data = []
         self.current_block_index = 0
         self.current_trial_index = 0
@@ -23,7 +24,7 @@ class ReactionTimeApp:
         self.stimulus_start_time = 0.0
         self.current_state = "WELCOME"
 
-        # Instantiate block pipeline
+        # Pipeline blocks
         self.blocks = [
             SimpleRTBlock(trial_count=6, is_practice=True),
             SimpleRTBlock(trial_count=20, is_practice=False),
@@ -60,7 +61,7 @@ class ReactionTimeApp:
             messagebox.showwarning("Input Required", "Please enter a Participant ID.")
             return
         self.participant_id = val
-        self.csv_handler = DataHandler(f"RT_Experiment_{self.participant_id}.csv")
+        self.csv_handler = DataHandler(self.participant_id)
         self.show_instructions_screen()
 
     def show_instructions_screen(self):
@@ -126,7 +127,7 @@ class ReactionTimeApp:
 
             trial_record = {
                 "participant_id": self.participant_id,
-                "block_name": current_block.name,
+                "condition": current_block.type,
                 "is_practice": 1 if current_block.is_practice else 0,
                 "trial_number": self.current_trial_index + 1,
                 "target_color": target_color,
@@ -136,7 +137,8 @@ class ReactionTimeApp:
             }
 
             self.experiment_data.append(trial_record)
-            self.csv_handler.append_trial(trial_record)
+            if self.csv_handler:
+                self.csv_handler.append_trial(trial_record)
 
             if current_block.is_practice:
                 if is_correct:
@@ -145,7 +147,7 @@ class ReactionTimeApp:
                     self.lbl_feedback.config(text="Incorrect key!", fg="#f44336")
 
             self.current_trial_index += 1
-            delay = 1000 if current_block.is_practice else 600
+            delay = 600 if current_block.is_practice else 300
 
             if self.current_trial_index < len(self.trial_list):
                 self.root.after(delay, self.run_trial)
@@ -161,7 +163,7 @@ class ReactionTimeApp:
         self.clear_frame()
 
         tk.Label(self.main_frame, text="Experiment Complete!", font=("Segoe UI", 18, "bold"), fg="#ffffff", bg="#1e1e1e").pack(pady=(30, 10))
-        tk.Label(self.main_frame, text=f"Data recorded live to:\nRT_Experiment_{self.participant_id}.csv", font=("Segoe UI", 11), fg="#4caf50", bg="#1e1e1e").pack(pady=20)
+        tk.Label(self.main_frame, text=f"Data recorded to:\ncsv_data/RT_Experiment_{self.participant_id}.csv", font=("Segoe UI", 11), fg="#4caf50", bg="#1e1e1e").pack(pady=20)
         ttk.Button(self.main_frame, text="Exit", command=self.root.quit).pack(pady=10)
 
 if __name__ == "__main__":

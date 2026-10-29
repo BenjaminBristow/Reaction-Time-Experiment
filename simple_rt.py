@@ -2,6 +2,7 @@ class SimpleRTBlock:
     def __init__(self, trial_count=20, is_practice=False):
         self.trial_count = trial_count
         self.is_practice = is_practice
+        self.type = "simple"
         self.name = "Simple Practice" if is_practice else "Simple Main"
         self.title = f"Simple Reaction Time ({'Practice' if is_practice else 'Main Test'})"
         self.guide_text = "Press SPACEBAR when RED circle appears"

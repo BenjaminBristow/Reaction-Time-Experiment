@@ -4,6 +4,7 @@ class ChoiceRTBlock:
     def __init__(self, trial_count=20, is_practice=False):
         self.trial_count = trial_count
         self.is_practice = is_practice
+        self.type = "choice"
         self.name = "Choice Practice" if is_practice else "Choice Main"
         self.title = f"Choice Reaction Time ({'Practice' if is_practice else 'Main Test'})"
         self.guide_text = "RED = Press 'F'  |  BLUE = Press 'J'"
