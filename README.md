@@ -17,7 +17,7 @@ rt_experiment/
 ├── choice_rt.py               # Logic & trial generator for Choice RT blocks
 ├── data_handler.py            # Automatically saves participant data to csv_data/
 ├── merge_data.py              # Merges all CSVs in csv_data/ into master_experiment_data.csv
-├── .gitignore                # Excludes cache files and raw data CSVs
+├── .gitignore                 # Excludes cache files
 └── README.md                  # Project documentation
 ```
 
