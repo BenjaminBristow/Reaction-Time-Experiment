@@ -26,10 +26,10 @@ class ReactionTimeApp:
 
         # Pipeline blocks
         self.blocks = [
-            SimpleRTBlock(trial_count=6, is_practice=True),
-            SimpleRTBlock(trial_count=20, is_practice=False),
-            ChoiceRTBlock(trial_count=6, is_practice=True),
-            ChoiceRTBlock(trial_count=20, is_practice=False)
+            SimpleRTBlock(trial_count=5, is_practice=True),
+            SimpleRTBlock(trial_count=10, is_practice=False),
+            ChoiceRTBlock(trial_count=5, is_practice=True),
+            ChoiceRTBlock(trial_count=10, is_practice=False)
         ]
 
         self.main_frame = tk.Frame(self.root, bg="#1e1e1e")
@@ -96,7 +96,7 @@ class ReactionTimeApp:
         self.lbl_feedback.config(text="")
         self.canvas.create_text(270, 130, text="+", fill="#666666", font=("Segoe UI", 36, "bold"))
 
-        iti = random.randint(1000, 2000)
+        iti = random.randint(1000, 5000)
         self.root.after(iti, self.present_stimulus)
 
     def present_stimulus(self):

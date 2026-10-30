@@ -1,7 +1,7 @@
 import random
 
 class ChoiceRTBlock:
-    def __init__(self, trial_count=20, is_practice=False):
+    def __init__(self, trial_count=10, is_practice=False):
         self.trial_count = trial_count
         self.is_practice = is_practice
         self.type = "choice"
@@ -13,6 +13,7 @@ class ChoiceRTBlock:
             "• Press 'F' for RED circle (Left Hand)\n"
             "• Press 'J' for BLUE circle (Right Hand)\n\n"
             "Press SPACEBAR when ready to begin."
+            "Feedback will not happen in the main experiment"
         )
 
     def generate_trials(self):

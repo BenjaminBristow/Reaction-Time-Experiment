@@ -1,5 +1,5 @@
 class SimpleRTBlock:
-    def __init__(self, trial_count=20, is_practice=False):
+    def __init__(self, trial_count=10, is_practice=False):
         self.trial_count = trial_count
         self.is_practice = is_practice
         self.type = "simple"
@@ -10,6 +10,7 @@ class SimpleRTBlock:
             "Focus on the center cross.\n\n"
             "Whenever a RED circle appears, press SPACEBAR as fast as you can.\n\n"
             "Press SPACEBAR when ready to begin."
+            "Feedback will not happen in the main experiment"
         )
 
     def generate_trials(self):

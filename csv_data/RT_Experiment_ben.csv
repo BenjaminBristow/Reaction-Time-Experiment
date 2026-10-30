@@ -1,55 +1,87 @@
 participant_id,block_name,is_practice,trial_number,target_color,pressed_key,is_correct,reaction_time_ms
-ben,Simple Practice,1,1,red,space,1,291
-ben,Simple Practice,1,2,red,space,1,234
-ben,Simple Practice,1,3,red,space,1,269
-ben,Simple Practice,1,4,red,space,1,247
-ben,Simple Practice,1,5,red,space,1,248
-ben,Simple Practice,1,6,red,space,1,241
-ben,Simple Main,0,1,red,space,1,257
-ben,Simple Main,0,2,red,space,1,244
-ben,Simple Main,0,3,red,space,1,277
-ben,Simple Main,0,4,red,space,1,282
-ben,Simple Main,0,5,red,space,1,265
-ben,Simple Main,0,6,red,space,1,251
-ben,Simple Main,0,7,red,space,1,240
-ben,Simple Main,0,8,red,space,1,265
-ben,Simple Main,0,9,red,space,1,261
-ben,Simple Main,0,10,red,space,1,246
-ben,Simple Main,0,11,red,space,1,232
-ben,Simple Main,0,12,red,space,1,250
-ben,Simple Main,0,13,red,space,1,292
-ben,Simple Main,0,14,red,space,1,280
-ben,Simple Main,0,15,red,space,1,267
-ben,Simple Main,0,16,red,space,1,274
-ben,Simple Main,0,17,red,space,1,281
-ben,Simple Main,0,18,red,space,1,242
-ben,Simple Main,0,19,red,space,1,254
-ben,Simple Main,0,20,red,space,1,306
-ben,Choice Practice,1,1,blue,f,0,287
-ben,Choice Practice,1,2,blue,j,1,477
-ben,Choice Practice,1,3,red,f,1,272
-ben,Choice Practice,1,4,blue,j,1,324
-ben,Choice Practice,1,5,red,f,1,302
-ben,Choice Practice,1,6,red,j,0,300
-ben,Choice Main,0,1,red,f,1,391
-ben,Choice Main,0,2,red,f,1,426
-ben,Choice Main,0,3,red,f,1,389
-ben,Choice Main,0,4,red,f,1,382
-ben,Choice Main,0,5,blue,j,1,435
-ben,Choice Main,0,6,red,f,1,376
-ben,Choice Main,0,7,red,f,1,401
-ben,Choice Main,0,8,blue,j,1,406
-ben,Choice Main,0,9,blue,f,0,318
-ben,Choice Main,0,10,blue,j,1,389
-ben,Choice Main,0,11,blue,j,1,432
-ben,Choice Main,0,12,red,f,1,386
-ben,Choice Main,0,13,red,f,1,379
-ben,Choice Main,0,14,blue,j,1,377
-ben,Choice Main,0,15,blue,j,1,417
-ben,Choice Main,0,16,red,f,1,342
-ben,Choice Main,0,17,blue,j,1,416
-ben,Choice Main,0,18,blue,f,0,333
-ben,Choice Main,0,19,red,f,1,353
-ben,Choice Main,0,20,blue,j,1,356
 ben,simple,1,1,red,space,1,284
 ben,simple,1,2,red,space,1,313
+ben,simple,1,1,red,space,1,269
+ben,simple,1,2,red,space,1,261
+ben,simple,1,1,red,space,1,259
+ben,simple,1,2,red,space,1,304
+ben,simple,1,3,red,space,1,314
+ben,simple,1,4,red,space,1,284
+ben,simple,1,5,red,space,1,343
+ben,simple,1,6,red,space,1,255
+ben,simple,0,1,red,space,1,258
+ben,simple,0,2,red,space,1,271
+ben,simple,0,3,red,space,1,256
+ben,simple,0,4,red,space,1,317
+ben,simple,0,5,red,space,1,301
+ben,simple,0,6,red,space,1,341
+ben,simple,0,7,red,space,1,264
+ben,simple,0,8,red,space,1,271
+ben,simple,0,9,red,space,1,359
+ben,simple,0,10,red,space,1,351
+ben,simple,0,11,red,space,1,289
+ben,simple,0,12,red,space,1,287
+ben,simple,0,13,red,space,1,286
+ben,simple,0,14,red,space,1,329
+ben,simple,0,15,red,space,1,318
+ben,simple,0,16,red,space,1,389
+ben,simple,0,17,red,space,1,375
+ben,simple,0,18,red,space,1,393
+ben,simple,0,19,red,space,1,292
+ben,simple,0,20,red,space,1,314
+ben,choice,1,1,blue,f,0,339
+ben,choice,1,2,blue,j,1,335
+ben,choice,1,3,red,f,1,334
+ben,choice,1,4,red,f,1,424
+ben,choice,1,5,red,f,1,680
+ben,choice,1,6,blue,j,1,294
+ben,choice,0,1,red,f,1,326
+ben,choice,0,2,blue,j,1,366
+ben,choice,0,3,red,f,1,522
+ben,choice,0,4,blue,j,1,348
+ben,choice,0,5,red,f,1,339
+ben,choice,0,6,red,f,1,356
+ben,choice,0,7,red,f,1,375
+ben,choice,0,8,red,f,1,437
+ben,choice,0,9,blue,f,0,342
+ben,choice,0,10,blue,f,0,361
+ben,choice,0,11,red,f,1,342
+ben,choice,0,12,blue,j,1,345
+ben,choice,0,13,red,f,1,384
+ben,choice,0,14,blue,j,1,374
+ben,choice,0,15,blue,f,0,392
+ben,choice,0,16,blue,j,1,448
+ben,choice,0,17,red,f,1,286
+ben,choice,0,18,blue,j,1,320
+ben,choice,0,19,blue,j,1,435
+ben,choice,0,20,red,f,1,369
+ben,simple,1,1,red,space,1,292
+ben,simple,1,2,red,space,1,298
+ben,simple,1,3,red,space,1,289
+ben,simple,1,4,red,space,1,312
+ben,simple,1,5,red,space,1,275
+ben,simple,0,1,red,space,1,249
+ben,simple,0,2,red,space,1,265
+ben,simple,0,3,red,space,1,336
+ben,simple,0,4,red,space,1,295
+ben,simple,0,5,red,space,1,502
+ben,simple,0,6,red,space,1,275
+ben,simple,0,7,red,space,1,253
+ben,simple,0,8,red,space,1,143
+ben,simple,0,9,red,space,1,271
+ben,simple,0,10,red,space,1,286
+ben,choice,1,1,red,f,1,265
+ben,choice,1,2,red,f,1,395
+ben,choice,1,3,red,f,1,467
+ben,choice,1,4,blue,j,1,310
+ben,choice,1,5,blue,j,1,270
+ben,choice,0,1,red,f,1,324
+ben,choice,0,2,red,f,1,355
+ben,choice,0,3,blue,j,1,437
+ben,choice,0,4,blue,f,0,341
+ben,choice,0,5,blue,j,1,404
+ben,choice,0,6,red,f,1,346
+ben,choice,0,7,blue,j,1,572
+ben,choice,0,8,red,f,1,281
+ben,choice,0,9,blue,j,1,359
+ben,choice,0,10,red,f,1,293
